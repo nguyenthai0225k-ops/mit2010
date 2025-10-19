@@ -1342,17 +1342,19 @@
         });
 
     </script>
-    <audio id="bg-music" autoplay loop>
-  <source src="c:\Users\LENOVO\Downloads\cuoithoii.mp3" type="audio/mpeg">
-  Trình duyệt của bạn không hỗ trợ audio.
+    <audio id="bgm" autoplay loop>
+  <source src="cuoithoi.mp3" type="audio/mpeg">
 </audio>
+
 <script>
-  // Khi người dùng click 1 lần vào trang, nhạc sẽ bắt đầu phát
-  window.addEventListener('click', () => {
-    const music = document.getElementById('bg-music');
-    music.play();
-  }, { once: true });
+  // Bắt buộc kích hoạt nhạc tự động trên GitHub Pages
+  document.addEventListener('click', () => {
+    const audio = document.getElementById('bgm');
+    audio.muted = false;
+    audio.play();
+  });
 </script>
+
 <!-- Hiệu ứng trái tim bay -->
 <style>
 .heart {
@@ -1394,5 +1396,6 @@ setInterval(() => {
 </body>
 
 </html>
+
 
 
