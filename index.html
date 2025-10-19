@@ -1342,18 +1342,20 @@
         });
 
     </script>
-    <audio id="bgm" autoplay loop>
+  <audio id="bgm" loop autoplay muted>
   <source src="cuoithoi.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  // Bắt buộc kích hoạt nhạc tự động trên GitHub Pages
-  document.addEventListener('click', () => {
+  // Một số trình duyệt (như Chrome) chặn autoplay có âm thanh
+  // nên cần bật âm khi người dùng tương tác lần đầu
+  window.addEventListener('click', () => {
     const audio = document.getElementById('bgm');
     audio.muted = false;
     audio.play();
   });
 </script>
+
 
 <!-- Hiệu ứng trái tim bay -->
 <style>
@@ -1396,6 +1398,7 @@ setInterval(() => {
 </body>
 
 </html>
+
 
 
 
