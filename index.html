@@ -1342,21 +1342,6 @@
         });
 
     </script>
-  <audio id="bgm" loop autoplay muted>
-  <source src="cuoithoi.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  // Một số trình duyệt (như Chrome) chặn autoplay có âm thanh
-  // nên cần bật âm khi người dùng tương tác lần đầu
-  window.addEventListener('click', () => {
-    const audio = document.getElementById('bgm');
-    audio.muted = false;
-    audio.play();
-  });
-</script>
-
-
 <!-- Hiệu ứng trái tim bay -->
 <style>
 .heart {
@@ -1394,10 +1379,22 @@ setInterval(() => {
   });
 }, 800);
 </script>
+<audio id="bgm" loop autoplay muted>
+  <source src="cuoithoi.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener("click", () => {
+    const bgm = document.getElementById("bgm");
+    bgm.muted = false;
+    bgm.play().catch(e => console.log(e));
+  });
+</script>
 
 </body>
 
 </html>
+
 
 
 
