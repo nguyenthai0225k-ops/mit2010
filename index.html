@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THÁI gửi tới MÍT💌💌</title>
+    <title>Thái gửi Mít💌💌</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
         integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,86 +16,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style>
-        .letter {
-  width: 700px;
-  background: #ffe6e6;
-  border: 2px dashed #ff6699;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 40px auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.letter-content {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.letter-left img {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid #ff6699;
-  box-shadow: 0 0 10px rgba(255, 100, 150, 0.4);
-}
-
-.letter-right {
-  flex: 1;
-  text-align: left;
-  color: #333;
-  font-family: 'Dancing Script', cursive;
-}
-
-.letter-right h2 {
-  text-align: center;
-  color: #c2185b;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.letter-right p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-                /* Hiệu ứng hạt lấp lánh cho sự lãng mạn */
-        .sparkle {
-            position: absolute;
-            width: 3px; /* Kích thước hạt nhỏ */
-            height: 3px;
-            background-color: #fff; /* Màu trắng sáng */
-            border-radius: 50%;
-            opacity: 0;
-            z-index: 50; /* Đặt trên lá thư */
-            pointer-events: none; /* Không chặn click */
-            animation: sparkle-float 3s ease-out infinite;
-            /* Thiết lập vị trí ban đầu ngẫu nhiên xung quanh thư */
-            transform: translateX(var(--x-offset)) translateY(var(--y-offset));
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
         }
 
-        @keyframes sparkle-float {
-            0% {
-                opacity: 0.5;
-                transform: translateY(0) scale(1);
-            }
-            100% {
-                opacity: 0;
-                transform: translateY(-80px) scale(0.5); /* Bay lên và mờ dần */
-            }
+        .container svg {
+            width: 50%;
+            height: 50%;
         }
-                .container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 97vh;
-                }
-
-                .container svg {
-                    width: 50%;
-                    height: 50%;
-                }
     </style>
 
     <!-- aa2 -->
@@ -123,9 +54,6 @@
             top: 50px;
             cursor: pointer;
             animation: up 3s linear infinite;
-            /* THÊM DÒNG NÀY ĐỂ TẠO HIỆU ỨNG PHÁT SÁNG */
-            box-shadow: 0 0 30px rgba(240, 128, 128, 0.8), 0 0 15px rgba(255, 255, 255, 0.5); 
-            /* Ánh sáng hồng nhẹ và ánh sáng trắng */
         }
 
         @keyframes up {
@@ -674,24 +602,7 @@
             left: -50%;
         }
 
-        .giftbox {
-            position: relative;
-            width: 40%;
-            height: 100%;
-        }
-
-        .giftbox .img {
-            position: absolute;
-            width: 180px;
-            bottom: -10px;
-            left: 50px;
-            z-index: 100;
-        }
-
-        .giftbox img {
-            width: 100%;
-        }
-
+       
         .textLetter {
             width: 100%;
             flex-direction: column;
@@ -971,7 +882,7 @@
                 <div class="envelope"></div>
                 <div class="front"></div>
                 <div class="card">
-                    <div class="text">Happy</br>New<br> Year!<br>❤️❤️</br></div>
+                    <div class="text">Happy</br> New<br>Year!<br>❤️❤️</br></div>
                     <div class="heart"></div>
                 </div>
                 <div class="hearts">
@@ -1062,23 +973,19 @@
                 </div>
 
                 <div class="wrapperLetter">
-                    <div class="giftbox">
-                        <div class="img">
-                            <img src="./image/giftbox.png" alt="">
-                        </div>
-                    </div>
+
                     <div class="textLetter">
                         <h2></h2>
                         <p class="contentLetter"></p>
                         <div class="heartAnimation">
-                            <img src="./image/heartAnimation.gif" alt="">
+                            <img src="C:\Users\LENOVO\Downloads\heartAnimation.gif" alt="">
                         </div>
                     </div>
                     <div class="mewmew1">
-                        <img src="./image/mewmew.gif" alt="">
+                        <img src="C:\Users\LENOVO\Downloads\mewmew.gif" alt="">
                     </div>
                     <div class="mewmew2">
-                        <img src="./image/mewmew.gif" alt="">
+                        <img src="C:\Users\LENOVO\Downloads\mewmew.gif" alt="">
                     </div>
                 </div>
             </div>
@@ -1202,7 +1109,7 @@
         // .textLetter text h2
         let indexText = 0;
         let textLetter = document.querySelector('.textLetter h2');
-        const textLetterH2 = "Gửi Tiêu Hồng Nhung!";
+        const textLetterH2 = "Gửi emm❤️❤️!";
         let timoutTextLetter;
 
         function textCharLetter() {
@@ -1230,7 +1137,8 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Hôm nay là ngày 20/10 anh chúc em luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhá. Hãy luôn giữ mãi nụ cười trên môi nhá và đừng suy nghĩ nhiều về những thứ không đáng nha 0/10 anh chúc em luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhá. Hãy luôn giữ mãi nụ cười trên môi nhá và đừng suy nghĩ nhiều về những thứ không đáng nha 0/10 anh chúc em luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhá. Hãy luôn giữ mãi nụ cười trên môi nhá và đừng suy nghĩ nhiều về những thứ không đáng nha";
+        const textLetterP = "Hôm nay là ngày 20/10 mặc dù anh và em chưa là gì của nhau nhưng anh vẫn chúc em luôn xinh đẹp, học giỏi đừng để nỗi buồn ảnh hưởng tới mình nhé. Anh mong 1 ngày nào đó có thể đồng hành với em với vai trò đặc biệt hơn. Yêu em - Nhung ";
+
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
@@ -1342,8 +1250,7 @@
         });
 
     </script>
-<!-- Hiệu ứng trái tim bay -->
-<style>
+    <style>
 .heart {
   position: fixed;
   bottom: -10px;
@@ -1368,17 +1275,6 @@ setInterval(() => {
   setTimeout(() => heart.remove(), 6000);
 }, 500);
 </script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-setInterval(() => {
-  confetti({
-    particleCount: 5,
-    spread: 70,
-    origin: { x: Math.random(), y: 0 },
-    colors: ['#ffb6c1', '#ff69b4', '#ffc0cb']
-  });
-}, 800);
-</script>
 <audio id="bgm" loop autoplay muted>
   <source src="cuoithoi.mp3" type="audio/mpeg">
 </audio>
@@ -1390,12 +1286,6 @@ setInterval(() => {
     bgm.play().catch(e => console.log(e));
   });
 </script>
-
 </body>
 
 </html>
-
-
-
-
-
